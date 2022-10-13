@@ -1,1 +1,40 @@
-<p>friends works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <app-navbar></app-navbar>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="table-light">
+                                <th scope="col">ID </th>
+                                <th scope="col">NAME</th>
+                                <th scope="col">FRIEND NAME</th>
+                                <th scope="col">FRIEND NICKNAME</th>
+                                <th scope="col">DESCRIPTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of friendsData" class="table-info">
+                                <td>{{i._id}}</td>
+                                <td>{{i.name}}</td>
+                                <td>{{i.friendName}}</td>
+                                <td>{{i.friendNickName}}</td>
+                                <td>{{i.DescribeYourFriend}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
