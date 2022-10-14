@@ -15,10 +15,15 @@ export class FriendsComponent implements OnInit {
 
   }
 
+
+
+  status:boolean=false
+
   fetchData=()=>{
     this.myapi.viewFriends().subscribe(
       (data)=>{
         this.friendsData=data
+        this.status=true
       }
     )
   }

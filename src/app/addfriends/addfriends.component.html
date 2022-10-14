@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <app-navbar></app-navbar>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">ID</label>
+                    <input type="text" class="form-control" name="_id" [(ngModel)] ="_id">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">NAME</label>
+                    <input type="text" class="form-control"  name="name" [(ngModel)]="name">
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">FRIEND NAME</label>
+                    <input type="text" class="form-control"  name="friendName" [(ngModel)]="friendName">
+
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">FRIENDS NICKNAME</label>
+                    <input type="text" class="form-control"  name="friendNickName" [(ngModel)]="friendNickName">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">DESCRIPTION</label>
+                    <input type="text" class="form-control"  name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   
+                    
+                    <button class="btn btn-success" (click)="readValues()">SUBMIT</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
