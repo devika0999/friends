@@ -9,6 +9,10 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
+                   <div  *ngIf="status then showData else showLoadingscreen"></div>
+
+                   <ng-template #showData>
+
                     <table class="table table-bordered">
                         <thead>
                             <tr class="table-light">
@@ -30,6 +34,13 @@
                         </tbody>
                     </table>
 
+
+                   </ng-template>
+                   <ng-template #showLoadingscreen>
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                   </ng-template>
                     
 
                 </div>
